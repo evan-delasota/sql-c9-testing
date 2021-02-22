@@ -9,13 +9,22 @@ Following an SQL course through c9.
      /_/   \_\_/\_/  |____/   \____|_|\___/ \__,_|\__,_|  /_/ 
  ----------------------------------------------------------------- 
 
-sudo yum install mysql-server                               <-- INSTALL FOR MARIADB -->
+sudo yum install mysql-server                               <-- INSTALL FOR MARIADB --><br />
 
-sudo service httpd start
-sudo service mariadb start
-sudo mysql -uroot -p
+sudo service httpd start<br />
+sudo service mariadb start<br />
+sudo mysql -uroot -p<br />
 
 
-mysqldump -u root -p <db_name> > <export_name>.sql          <-- backup mariadb files -->
+mysqldump -u root -p <db_name> > <export_name>.sql          <-- backup mariadb files --><br />
 
-testing git profile settings
+testing git profile settings<br />
+
+CRUD:
+    Create -    CREATE
+    Retrieve -  SELECT FROM WHERE
+    Update -    UPDATE SET WHERE
+    Delete -    DELETE FROM WHERE
+    
+When updating / deleting, use SELECT to target the data in question before executing any UPDATE / DELETE command, 
+as there are no take-backsies. Unless your using version control and constantly backing up your database. (pls do) <br />
