@@ -17,3 +17,5 @@ sudo mysql -uroot -p
 
 
 mysqldump -u root -p <db_name> > <export_name>.sql          <-- backup mariadb files -->
+
+testing git profile settings
