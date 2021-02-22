@@ -21,10 +21,10 @@ mysqldump -u root -p <db_name> > <export_name>.sql          <-- backup mariadb f
 testing git profile settings<br />
 
 CRUD:
-    Create -    CREATE
-    Retrieve -  SELECT FROM WHERE
-    Update -    UPDATE SET WHERE
-    Delete -    DELETE FROM WHERE
+    Create -    CREATE<br />
+    Retrieve -  SELECT FROM WHERE<br />
+    Update -    UPDATE SET WHERE<br />
+    Delete -    DELETE FROM WHERE<br />
     
 When updating / deleting, use SELECT to target the data in question before executing any UPDATE / DELETE command, 
 as there are no take-backsies. Unless your using version control and constantly backing up your database. (pls do) <br />
